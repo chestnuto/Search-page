@@ -15,18 +15,23 @@
       min-width: 375px;
     }
     #searchBox {
-      margin: 20px auto;
-      width: 377px;
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      /* width: 377px; */
     }
     #searchBox input {
-      /* width: auto;
-      padding: 8px 20px;
-      font-family: Georgia;
+      width: auto;
+      padding: 12px 20px;
+      font-family: 'Aleo';
       color: #5d5d5d;
-      font-size: 20px;
+      font-size: 24px;
       border-radius: 5px;
       outline: 0;
-      border: 0; */
+      border: 0;
+    }
+    input::placeholder {
+      color: #ababab;
     }
     #searchResults {
       display: flex;
@@ -71,7 +76,7 @@
     }
     .resultBox ul.ingredients {
       padding: 0 25px;
-      font-family: Aleo;
+      font-family: 'Aleo';
     }
     .resultBox .ingredients li {
       text-align: left;
@@ -123,7 +128,7 @@
 
 <div id="searchWrap">
   <div id="searchBox">
-    <input type="text" id="searchInput" onkeyup="searchDrinksObj()" size="30" placeholder="What do you feel like?" autofocus >
+    <input type="text" id="searchInput" onkeyup="searchDrinksObj()" size="23" placeholder="What do you feel like drinking?" autofocus >
   </div>
   <div id="searchResults"></div>
 </div>
