@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Drink search</title>
+  <link href="https://fonts.googleapis.com/css?family=Aleo|Vidaloka|Merriweather" rel="stylesheet">
   <style>
     body {
       background-color: #fbfbfb;
@@ -11,6 +12,7 @@
     #searchWrap {
       margin: 0 auto;
       max-width: 1352px;
+      min-width: 375px;
     }
     #searchBox {
       margin: 20px auto;
@@ -42,18 +44,6 @@
       animation-duration: 800ms;
       text-align: center;
     }
-    @media (max-width: 452px) {
-      .resultBox {
-        padding: 6px;
-        margin: 4px;
-        width: 168px;
-      }
-    }
-    @media (max-width: 452px) {
-      .resultBox ul.ingredients {
-        padding: 0 5px;
-      }
-    }
     @keyframes resultFadeIn {
       0% {
         color: #fff;
@@ -69,8 +59,8 @@
     }
     .resultBox ul .title {
       color: #525252;
-      font-size: 19px;
-      font-family: Cambria;
+      font-size: 17px;
+      font-family: 'Merriweather', serif;
       text-transform: uppercase;
       font-weight: 600;
     }
@@ -81,7 +71,7 @@
     }
     .resultBox ul.ingredients {
       padding: 0 25px;
-      font-family: Georgia,serif;
+      font-family: Aleo;
     }
     .resultBox .ingredients li {
       text-align: left;
@@ -107,6 +97,26 @@
         opacity: 0;
       }
     } */
+    @media (max-width: 556px) {
+      .resultBox {
+        padding: 11px 6px;
+        margin: 5px 4px;
+        width: 162px;
+      }
+      .resultBox ul.ingredients {
+        padding: 0 5px;
+      }
+      .resultBox img {
+        width: 150px;
+        padding: 15px 0;
+      }
+      .resultBox ul .title {
+        font-size: 15px;
+      }
+      .resultBox .ingredients li {
+        padding: 3px 0;
+      }
+    }
   </style>
 </head>
 <body>
