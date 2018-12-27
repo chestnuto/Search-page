@@ -18,7 +18,7 @@
     #searchBox input {
       width: auto;
       padding: 8px 20px;
-      font-family: Arial;
+      font-family: Georgia;
       color: #5d5d5d;
       font-size: 20px;
       border-radius: 5px;
@@ -41,37 +41,46 @@
       animation-duration: 800ms;
       text-align: center;
     }
-    .resultBox ul .title {
-      color: #525252;
-      font-size: 17px;
-      font-family: Baskerville;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    .resultBox ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .resultBox .ingredients li {
-      text-align: left;
-    }
-    .resultBox img {
-      width: 160px;
-      padding: 20px 0;
-      border-radius: 50%;
-    }
     @keyframes resultFadeIn {
       0% {
         color: #fff;
         border: 2px solid #fff;
         opacity: 0;
       }
-      100% {
-
+      100% {}
       }
+    .resultBox ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    .boxFadeOut {
+    .resultBox ul .title {
+      color: #525252;
+      font-size: 19px;
+      font-family: Cambria;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .resultBox img {
+      width: 160px;
+      padding: 20px 0;
+      border-radius: 50%;
+    }
+    .resultBox ul.ingredients {
+      padding: 0 25px;
+      font-family: Georgia,serif;
+    }
+    .resultBox .ingredients li {
+      text-align: left;
+      padding: 5px 0;
+    }
+    .resultBox .ingredients li:empty {
+      display: none;
+    }
+    /* .resultBox .ingredients .garnish{
+        padding: 19px 0 0 0;
+    } */
+    /* .boxFadeOut {
       animation-name: resultFadeOut;
       animation-duration: 2s;
     }
@@ -84,7 +93,7 @@
         border: 2px solid #fff;
         opacity: 0;
       }
-    }
+    } */
   </style>
 </head>
 <body>
@@ -122,24 +131,30 @@ function searchDrinksObj() {
     drinkName = drinksObj[i].Name;
     indexNo = drinkName.indexOf();
     drinkSpirit = drinksObj[i].Ingredients.Spirit;
+    drinkSpirit_2 = drinksObj[i].Ingredients.Spirit_2;
     drinkSweetener = drinksObj[i].Ingredients.Sweetener;
     drinkJuice = drinksObj[i].Ingredients.Juice;
     drinkLiqueur = drinksObj[i].Ingredients.Liqueur;
+    drinkProtein = drinksObj[i].Ingredients.Protein;
     drinkBitters = drinksObj[i].Ingredients.Bitters;
+    drinkGarnish = drinksObj[i].Ingredients.Garnish;
     drinkPic = drinksObj[i].Thumbnail;
     drinkAlt = drinksObj[i].Alt;
 
     if (filter.length >= 3 && filter != '' && filter != ' ') {
 
-      if (drinkName.toUpperCase().indexOf(filter) > -1 || drinkSpirit.toUpperCase().indexOf(filter) > -1) {
-        document.getElementById('searchResults').innerHTML += '<div class="resultBox"><ul class="titleThumb"><li class="title">' + drinkName + '</li><li class="thumbnail"><img alt=\'' + drinkAlt + '\' src=\'' + drinkPic + '\' /></li></ul><ul class="ingredients">' + '<li class="spirit">' + drinkSpirit +
-        '</li><li class="sweetener">' + drinkSweetener + '</li><li class="juice">' + drinkJuice + '</li><li class="liqueur">' + drinkLiqueur + '</li><li class="bitters">' + drinkBitters + '</li></ul></div>';
+      if (drinkName.toUpperCase().indexOf(filter) > -1 || drinkSpirit.toUpperCase().indexOf(filter) > -1 || drinkSpirit_2.toUpperCase().indexOf(filter) > -1 || drinkJuice.toUpperCase().indexOf(filter) > -1 || drinkSweetener.toUpperCase().indexOf(filter) > -1 ||
+       drinkLiqueur.toUpperCase().indexOf(filter) > -1 || drinkProtein.toUpperCase().indexOf(filter) > -1 || drinkBitters.toUpperCase().indexOf(filter) > -1) {
+        document.getElementById('searchResults').innerHTML += '<div class="resultBox"><ul class="titleThumb"><li class="title">' + drinkName + '</li><li class="thumbnail"><img alt=\'' + drinkAlt + '\' src=\'' + drinkPic + '\' /></li></ul><ul class="ingredients">' +
+        '<li class="spirit">' + drinkSpirit + '</li><li class="spirit_2">' + drinkSpirit_2 + '</li><li class="sweetener">' + drinkSweetener + '</li><li class="juice">' + drinkJuice + '</li><li class="liqueur">' + drinkLiqueur +
+        '</li><li class="bitters">' + drinkBitters + '</li><li class="protein">' + drinkProtein + '</li><li class="garnish">' + drinkGarnish + '</li></ul></div>';
 
           console.log('Matched: ' + drinkName.toUpperCase() + ' with ' + '\'' + filter + '\'' + ', index: ' + indexNo);
       }
       else if (filter == "ALL") {
-        document.getElementById('searchResults').innerHTML += '<div class="resultBox">' + drinkName + '<img alt=\'' + drinkAlt + '\' src=\'' + drinkPic + '\' />' + '<li class="spirit">' + drinkSpirit +
-        '</li><li class="Ingredients">' + drinkSweetener + '<li class="juice">' + drinkJuice + '</li><li class="liqueur">' + drinkLiqueur + '</li><li class="bitters">' + drinkBitters + '</li></div>';
+        document.getElementById('searchResults').innerHTML += '<div class="resultBox"><ul class="titleThumb"><li class="title">' + drinkName + '</li><li class="thumbnail"><img alt=\'' + drinkAlt + '\' src=\'' + drinkPic + '\' /></li></ul><ul class="ingredients">' +
+        '<li class="spirit">' + drinkSpirit + '</li><li class="spirit_2">' + drinkSpirit_2 + '</li><li class="sweetener">' + drinkSweetener + '</li><li class="juice">' + drinkJuice + '</li><li class="liqueur">' + drinkLiqueur +
+        '</li><li class="bitters">' + drinkBitters + '</li><li class="protein">' + drinkProtein + '</li><li class="garnish">' + drinkGarnish + '</li></ul></div>';
 
           console.log('filter = all');
       }
@@ -154,14 +169,16 @@ var drinksObj = [
    {
      "Name": "Whiskey Sour",
      "Ingredients": {
-        "Spirit": "60ml Bourbon whiskey",
-        "Sweetener": "1/2 tsp Sugar",
-        "Juice": "30ml Lemon",
+        "Spirit": "60ml bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "1/2 tsp sugar",
+        "Juice": "30ml lemon",
+        "Protein": "1 egg white",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "Maraschino cherry and bitters, for garnish"
      },
-     "Garnish": "Cherry, Egg white",
-     "Served": "Ice",
+     "Served": "Up",
      "Method": "Shake",
      "Glassware": "Rock Glass",
      "Season": "Summer",
@@ -172,13 +189,15 @@ var drinksObj = [
    {
      "Name": "Manhattan ",
      "Ingredients": {
-        "Spirit": "60ml Rye or Bourbon whiskey",
-        "Sweetener": "30ml Sweet Vermouth",
+        "Spirit": "60ml rye or bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": "3 dashes Angostura"
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "Maraschino cherry, for garnish"
      },
-     "Garnish": "Cherry",
      "Served": "Up",
      "Method": "Stir",
      "Glassware": "Coupe",
@@ -190,13 +209,15 @@ var drinksObj = [
    {
      "Name": "Martini",
      "Ingredients": {
-        "Spirit": "60ml Gin",
-        "Sweetener": "5ml Dry Vermouth",
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "5ml dry vermouth",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "1 dash orange bitters",
+        "Garnish": "olive skewer or lemon twist, for garnish"
      },
-     "Garnish": "Olive or Twist",
      "Served": "Up",
      "Method": "Stir",
      "Glassware": "Coupe",
@@ -208,13 +229,15 @@ var drinksObj = [
    {
      "Name": "Old Fashioned",
      "Ingredients": {
-        "Spirit": "60ml Bourbon whiskey",
-        "Sweetener": "1/2 tsp Sugar",
+        "Spirit": "60ml bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "1/2 tsp sugar",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": "3 dashes Angostura"
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "1 orange and twist, for garnish"
      },
-     "Garnish": "Orange",
      "Served": "Ice",
      "Method": "Stir",
      "Glassware": "Rock Glass",
@@ -226,13 +249,15 @@ var drinksObj = [
    {
      "Name": "Margarita ",
      "Ingredients": {
-        "Spirit": "60ml Tequila",
-        "Sweetener": "20ml Orange Liqueur",
-        "Juice": "30ml Lime",
-        "Liqueur": "Orange",
-        "Bitters": ""
+        "Spirit": "60ml tequila",
+        "Spirit_2": "",
+        "Sweetener": "20ml orange liqueur",
+        "Juice": "30ml lime",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "salt rim"
      },
-     "Garnish": "Salt",
      "Served": "Up",
      "Method": "Shake",
      "Glassware": "Rock Glass",
@@ -244,13 +269,15 @@ var drinksObj = [
    {
      "Name": "Vesper",
      "Ingredients": {
-        "Spirit": "Gin, Vodka",
-        "Sweetener": "10ml Lillet Blanc",
+        "Spirit": "60ml vodka",
+        "Spirit_2": "30ml high proof gin",
+        "Sweetener": "22.5ml Lillet Blanc",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "1 dash Angostura",
+        "Garnish": "1 lemon twist, for garnish"
      },
-     "Garnish": "Olives",
      "Served": "Up",
      "Method": "Stir",
      "Glassware": "Coupe",
@@ -262,13 +289,15 @@ var drinksObj = [
    {
      "Name": "Bloody Mary",
      "Ingredients": {
-        "Spirit": "60ml Vodka",
+        "Spirit": "coming soon…",
+        "Spirit_2": "",
         "Sweetener": "",
-        "Juice": "Tomato",
+        "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": ""
      },
-     "Garnish": "Celery",
      "Served": "Ice",
      "Method": "Stir",
      "Glassware": "Highball",
@@ -280,13 +309,15 @@ var drinksObj = [
    {
      "Name": "Eggnog",
      "Ingredients": {
-        "Spirit": "Rum, Bourbon whiskey",
+        "Spirit": "coming soon…",
+        "Spirit_2": "",
         "Sweetener": "",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": ""
      },
-     "Garnish": "Cinnamon, Nutmeg",
      "Served": "Up",
      "Method": "Shake",
      "Glassware": "Rock Glass",
@@ -298,13 +329,15 @@ var drinksObj = [
    {
      "Name": "Boulevardier",
      "Ingredients": {
-        "Spirit": "60ml Bourbon whiskey",
-        "Sweetener": "30ml Sweet Vermouth",
+        "Spirit": "60ml rye or bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "30ml Campari",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "Maraschino cherry and 1 orange twist, for garnish"
      },
-     "Garnish": "Cherry",
      "Served": "Ice",
      "Method": "Stir",
      "Glassware": "Rock Glass",
@@ -316,13 +349,15 @@ var drinksObj = [
    {
      "Name": "Negroni",
      "Ingredients": {
-        "Spirit": "30ml Gin",
-        "Sweetener": "30ml Sweet Vermouth",
+        "Spirit": "30ml gin",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "30ml Campari",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "1 orange twist, for garnish"
      },
-     "Garnish": "Orange",
      "Served": "Ice",
      "Method": "Stir",
      "Glassware": "Rock Glass",
@@ -334,15 +369,17 @@ var drinksObj = [
    {
      "Name": "Rob Roy",
      "Ingredients": {
-        "Spirit": "60ml Scotch whisky",
-        "Sweetener": "30ml Sweet Vermouth",
+        "Spirit": "60ml scotch whisky",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": "3 dashes Angostura"
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "1 lemon twist, for garnish"
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Stir",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "",
@@ -352,15 +389,17 @@ var drinksObj = [
    {
      "Name": "Agave Old Fashioned",
      "Ingredients": {
-        "Spirit": "60ml Tequila",
+        "Spirit": "60ml tequila",
+        "Spirit_2": "",
         "Sweetener": "1/2 tsp Agave syrup",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": "3 dashes Angostura"
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "sliced jalepenos, for garnish"
      },
-     "Garnish": "Jalepenos",
      "Served": "Ice",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Rock Glass",
      "Season": "",
      "Tags": "",
@@ -370,15 +409,17 @@ var drinksObj = [
    {
      "Name": "Penicillin",
      "Ingredients": {
-        "Spirit": "60ml Scotch whisky",
-        "Sweetener": "1tsp of Honey",
-        "Juice": "20ml Lemon",
+        "Spirit": "60ml scotch whisky",
+        "Spirit_2": "15ml Islay whisky float",
+        "Sweetener": "1 tsp of honey",
+        "Juice": "20ml lemon and 1 tsp ginger juice",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "1 piece of candied ginger, for garnish"
      },
-     "Garnish": "Ginger",
      "Served": "Ice",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Rock Glass",
      "Season": "",
      "Tags": "Citrus",
@@ -388,15 +429,17 @@ var drinksObj = [
    {
      "Name": "Trinidad Sour",
      "Ingredients": {
-        "Spirit": "20ml Rye whiskey 100 proof",
-        "Sweetener": "30ml Orgeat Syrup",
-        "Juice": "20ml Lemon",
+        "Spirit": "20ml rye whiskey 100 proof",
+        "Spirit_2": "",
+        "Sweetener": "30ml orgeat syrup",
+        "Juice": "20ml lemon",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": "30ml Angostura"
+        "Bitters": "30ml Angostura",
+        "Garnish": ""
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "Citrus",
@@ -406,15 +449,17 @@ var drinksObj = [
    {
      "Name": "Hanky Panky",
      "Ingredients": {
-        "Spirit": "60ml Gin",
-        "Sweetener": "30ml Sweet Vermouth",
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "5ml Fernet Branca",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "1 lemon twist, for garnish"
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Stir",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "Herbal",
@@ -424,15 +469,17 @@ var drinksObj = [
    {
      "Name": "White Lady",
      "Ingredients": {
-        "Spirit": "60ml Gin",
-        "Sweetener": "20ml Orange Liqueur",
-        "Juice": "",
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "20ml orange liqueur",
+        "Juice": "30ml lemon",
+        "Protein": "1 egg white",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": ""
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "Citrus",
@@ -442,15 +489,17 @@ var drinksObj = [
    {
      "Name": "Daiquiri",
      "Ingredients": {
-        "Spirit": "60ml Rum",
-        "Sweetener": "1 tsp Sugar",
-        "Juice": "30ml Lime ",
+        "Spirit": "60ml rum",
+        "Spirit_2": "",
+        "Sweetener": "1 tsp sugar",
+        "Juice": "30ml lime ",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "float a lime wheel, for garnish"
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "Fresh, dry",
@@ -460,15 +509,17 @@ var drinksObj = [
    {
      "Name": "Sidecar",
      "Ingredients": {
-        "Spirit": "60ml Cognac or Rye whiskey",
-        "Sweetener": "45ml Orange Liqueur",
-        "Juice": "",
+        "Spirit": "45ml Cognac or rye whiskey",
+        "Spirit_2": "",
+        "Sweetener": "45ml orange liqueur",
+        "Juice": "30ml lemon",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "sugar rim and orange twist, for garnish"
      },
-     "Garnish": "",
      "Served": "Ice",
-     "Method": "",
+     "Method": "Stir",
      "Glassware": "Rock Glass",
      "Season": "",
      "Tags": "",
@@ -478,15 +529,17 @@ var drinksObj = [
    {
      "Name": "Sazerac",
      "Ingredients": {
-        "Spirit": "60ml Rye or Bourbon whiskey",
-        "Sweetener": "1/2 tsp Sugar",
+        "Spirit": "60ml Cognac or rye whiskey 100 proof",
+        "Spirit_2": "absinthe rinse ",
+        "Sweetener": "1/2 tsp sugar",
         "Juice": "",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "1 dash Angostura, 3 dashes of Peychaud's",
+        "Garnish": "1 lemon twist, for garnish"
      },
-     "Garnish": "",
      "Served": "Ice",
-     "Method": "",
+     "Method": "Stir",
      "Glassware": "Rock Glass",
      "Season": "",
      "Tags": "",
@@ -496,15 +549,17 @@ var drinksObj = [
    {
      "Name": "Mata Hari",
      "Ingredients": {
-        "Spirit": "45ml Cognac or Brandy",
-        "Sweetener": "1/2 tsp Sugar",
-        "Juice": "",
+        "Spirit": "45ml Cognac or brandy",
+        "Spirit_2": "",
+        "Sweetener": "chai-infused sweet vermouth",
+        "Juice": "22.5ml lemon and 22.5ml pomegranate ",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "3 dried rose buds, for garnish"
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "",
@@ -514,15 +569,17 @@ var drinksObj = [
    {
      "Name": "Hemingway Daiquiri",
      "Ingredients": {
-        "Spirit": "60ml Rum",
-        "Sweetener": "Cherry Liqueur",
-        "Juice": "",
-        "Liqueur": "",
-        "Bitters": ""
+        "Spirit": "52.5ml rum",
+        "Spirit_2": "",
+        "Sweetener": "1/4 tsp sugar",
+        "Juice": "30ml lime and 22.5ml grapefruit ",
+        "Protein": "",
+        "Liqueur": "22.5ml Luxardo Maraschino liqueur ",
+        "Bitters": "",
+        "Garnish": "cherry and lime wheel, for garnish"
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "Citrus",
@@ -532,15 +589,17 @@ var drinksObj = [
    {
      "Name": "Tommy's Margarita",
      "Ingredients": {
-        "Spirit": "60ml Tequila",
+        "Spirit": "60ml tequila",
+        "Spirit_2": "",
         "Sweetener": "5ml Agave Syrup",
-        "Juice": "20ml Lime",
+        "Juice": "30ml lime and 5ml jalapeno brine",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "sliced jalepenos, for garnish"
      },
-     "Garnish": "",
-     "Served": "Up",
-     "Method": "",
+     "Served": "Ice",
+     "Method": "Shake",
      "Glassware": "Rock Glass",
      "Season": "",
      "Tags": "Citrus",
@@ -550,15 +609,17 @@ var drinksObj = [
    {
      "Name": "Bennett",
      "Ingredients": {
-        "Spirit": "60ml Gin",
-        "Sweetener": "1 tsp Sugar",
-        "Juice": "",
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "1 tsp sugar",
+        "Juice": "30ml lime ",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "2 dashes Angostura",
+        "Garnish": ""
      },
-     "Garnish": "",
      "Served": "Up",
-     "Method": "",
+     "Method": "Stir",
      "Glassware": "Coupe",
      "Season": "",
      "Tags": "Citrus",
@@ -568,15 +629,17 @@ var drinksObj = [
    {
      "Name": "Piña Colada",
      "Ingredients": {
-        "Spirit": "60ml Rum",
+        "Spirit": "45ml rum",
+        "Spirit_2": "",
         "Sweetener": "",
-        "Juice": "",
+        "Juice": "60ml pineapple",
+        "Protein": "60ml coconut milk",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "cherry and pineapple wedge on a skewer, for garnish"
      },
-     "Garnish": "",
      "Served": "Ice",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Highball",
      "Season": "Summer",
      "Tags": "Fresh, tropical",
@@ -586,20 +649,102 @@ var drinksObj = [
    {
      "Name": "Mojito",
      "Ingredients": {
-        "Spirit": "60ml Rum",
-        "Sweetener": "",
-        "Juice": "",
+        "Spirit": "60ml rum",
+        "Spirit_2": "",
+        "Sweetener": "1 tsp sugar",
+        "Juice": "22.5ml lime and 3 mint leaves",
+        "Protein": "",
         "Liqueur": "",
-        "Bitters": ""
+        "Bitters": "",
+        "Garnish": "top up with soda water and add a mint sprig, for garnish"
      },
-     "Garnish": "",
      "Served": "Ice",
-     "Method": "",
+     "Method": "Shake",
      "Glassware": "Highball",
      "Season": "Summer",
      "Tags": "Fresh, tropical",
      "Alt": "Mojito",
      "Thumbnail": "https://www.culinaryhill.com/wp-content/uploads/2018/08/Mojito-Cocktail-Culinary-Hill-square.jpg"
+  },
+   {
+     "Name": "White Russian",
+     "Ingredients": {
+        "Spirit": "60ml vodka",
+        "Spirit_2": "",
+        "Sweetener": "30ml coffee liqueur",
+        "Juice": "",
+        "Protein": "1 tbsp thickened cream",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": ""
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "White Russian",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/12/20073201/white-russian-720x720-article.jpg"
+  },
+   {
+     "Name": "Black Russian",
+     "Ingredients": {
+        "Spirit": "60ml vodka",
+        "Spirit_2": "",
+        "Sweetener": "30ml coffee liqueur",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": ""
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Black Russian",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2010/11/08141426/FA-black-russian-NEWEST.jpg"
+  },
+   {
+     "Name": "Old Pal",
+     "Ingredients": {
+        "Spirit": "30ml rye or bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "30ml dry vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "30ml Campari",
+        "Bitters": "",
+        "Garnish": "1 lemon twist, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Old Pal",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/07/18144421/old-pal-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Southside",
+     "Ingredients": {
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "1/2 tsp sugar",
+        "Juice": "30ml lime and 5 mint leaves",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "1 mint sprig, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Southside",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2016/07/22142840/South-Side-720x720-Recipe.jpg"
   }
   ];
 
