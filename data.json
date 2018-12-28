@@ -1,427 +1,600 @@
-[
- {
-   "Name": "Sour",
-   "Ingredients": {
-      "Spirit": "Bourbon whiskey",
-      "Sweetener": "1/2 tsp sugar",
-      "Juice": "Lemon",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "Cherry, Egg white",
-   "Served": "Ice",
-   "Method": "Shake",
-   "Glassware": "Rock Glass",
-   "Season": "Summer",
-   "Tags": "Citrus",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/11/06162314/amaretto-sour-720x720-recipe.jpg"
-},
- {
-   "Name": "Manhattan ",
-   "Ingredients": {
-      "Spirit": "Rye whiskey",
-      "Sweetener": "Sweet Vermouth",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": "Angostura"
-   },
-   "Garnish": "Cherry",
-   "Served": "Up",
-   "Method": "Stir",
-   "Glassware": "Coupe",
-   "Season": "Summer",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/10144903/Manhattan-720x720-recipe.jpg"
-},
- {
-   "Name": "Martini",
-   "Ingredients": {
-      "Spirit": "Gin",
-      "Sweetener": "Dry Vermouth",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "Olive or Twist",
-   "Served": "Up",
-   "Method": "Stir",
-   "Glassware": "Coupe",
-   "Season": "Summer",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/07/24135042/room-temperature-martini-1-720x720-recipe.jpg"
-},
- {
-   "Name": "Old Fashioned",
-   "Ingredients": {
-      "Spirit": "Bourbon",
-      "Sweetener": "1/2 tsp sugar",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": "Angostura"
-   },
-   "Garnish": "Orange",
-   "Served": "Ice",
-   "Method": "Stir",
-   "Glassware": "Rock Glass",
-   "Season": "Summer",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/08113350/bourbon-old-fashioned-720x720-recipe.jpg"
-},
- {
-   "Name": "Margarita ",
-   "Ingredients": {
-      "Spirit": "Tequila",
-      "Sweetener": "",
-      "Juice": "Lime",
-      "Liqueur": "Orange",
-      "Bitters": ""
-   },
-   "Garnish": "Salt",
-   "Served": "Up",
-   "Method": "Shake",
-   "Glassware": "Rock Glass",
-   "Season": "Summer",
-   "Tags": "Citrus",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2016/11/16132003/margarita-rocks-salt-720sq.jpg"
-},
- {
-   "Name": "Vesper",
-   "Ingredients": {
-      "Spirit": "Gin, Vodka",
-      "Sweetener": "Dry Vermouth",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "Olives",
-   "Served": "Up",
-   "Method": "Stir",
-   "Glassware": "Coupe",
-   "Season": "Summer",
-   "Tags": "",
-   "Thumbnail": "https://manila-wine.com/media/catalog/product/cache/1/image/700x700/9df78eab33525d08d6e5fb8d27136e95/v/e/vesper.jpg"
-},
- {
-   "Name": "Bloody Mary",
-   "Ingredients": {
-      "Spirit": "Vodka",
-      "Sweetener": "",
-      "Juice": "Tomato",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "Celery",
-   "Served": "Ice",
-   "Method": "Stir",
-   "Glassware": "Highball",
-   "Season": "Summer",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/09/01105541/classic-bloody-mary-720x720-recipe.jpg"
-},
- {
-   "Name": "Eggnog",
-   "Ingredients": {
-      "Spirit": "Rum, Bourbon whiskey",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "Cinnamon, Nutmeg",
-   "Served": "Up",
-   "Method": "Shake",
-   "Glassware": "Rock Glass",
-   "Season": "Winter",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/11/06162327/eggnog-720x720-recipe.jpg"
-},
- {
-   "Name": "Boulevardier",
-   "Ingredients": {
-      "Spirit": "Bourbon whiskey",
-      "Sweetener": "Sweet Vermouth",
-      "Juice": "",
-      "Liqueur": "Campari",
-      "Bitters": ""
-   },
-   "Garnish": "Cherry",
-   "Served": "Ice",
-   "Method": "Stir",
-   "Glassware": "Rock Glass",
-   "Season": "Winter",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2013/01/20104453/fa-Boulevardier.jpg"
-},
- {
-   "Name": "Negroni",
-   "Ingredients": {
-      "Spirit": "Gin",
-      "Sweetener": "Sweet Vermouth",
-      "Juice": "",
-      "Liqueur": "Campari",
-      "Bitters": "Angostura"
-   },
-   "Garnish": "Orange",
-   "Served": "Ice",
-   "Method": "Stir",
-   "Glassware": "Rock Glass",
-   "Season": "Summer",
-   "Tags": "Spicy",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/08110806/negroni-720x720-recipe.jpg"
-},
- {
-   "Name": "Rob Roy",
-   "Ingredients": {
-      "Spirit": "Scotch whisky",
-      "Sweetener": "Sweet Vermouth",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/01/26151047/rob-roy-720x720-recipe.jpg"
-},
- {
-   "Name": "Agave Old Fashioned",
-   "Ingredients": {
-      "Spirit": "Tequila",
-      "Sweetener": "Agave syrup",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": "Angostura"
-   },
-   "Garnish": "Jalepenos",
-   "Served": "Ice",
-   "Method": "",
-   "Glassware": "Rock Glass",
-   "Season": "",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2011/08/anjeo-old-fashioned1.jpg"
-},
- {
-   "Name": "Penicillin",
-   "Ingredients": {
-      "Spirit": "Scotch whisky",
-      "Sweetener": "1tsp of Honey",
-      "Juice": "Lemon",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "Ginger",
-   "Served": "Ice",
-   "Method": "",
-   "Glassware": "Rock Glass",
-   "Season": "",
-   "Tags": "Citrus",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2016/03/25183103/penicillin-720x720.jpg"
-},
- {
-   "Name": "Trinidad Sour",
-   "Ingredients": {
-      "Spirit": "Rye whiskey",
-      "Sweetener": "",
-      "Juice": "Lemon",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "Citrus",
-   "Thumbnail": "https://cocktailkit.com.au/wp-content/uploads/2017/05/trinidad-sour-cocktail.jpg"
-},
- {
-   "Name": "Hanky Panky",
-   "Ingredients": {
-      "Spirit": "Gin",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "Herbal",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/08/25102051/hanky-panky-720-720-article.jpg"
-},
- {
-   "Name": "White Lady",
-   "Ingredients": {
-      "Spirit": "Gin",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "Citrus",
-   "Thumbnail": "https://tipsybartender.com/wp-content/uploads/2018/01/The-White-Lady.jpg"
-},
- {
-   "Name": "Daiquiri",
-   "Ingredients": {
-      "Spirit": "Rum",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "Fresh, dry",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/09/01105724/ultimate-daiquiri-720x720-recipe.jpg"
-},
- {
-   "Name": "Sidecar",
-   "Ingredients": {
-      "Spirit": "Cognac, Rye whiskey",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Ice",
-   "Method": "",
-   "Glassware": "Rock Glass",
-   "Season": "",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/06/23131338/NYC_Parlor-Steak-and-Fish_Emma-Slattery_ss-11691.jpg"
-},
- {
-   "Name": "Sazerac",
-   "Ingredients": {
-      "Spirit": "Rye, Bourbon whiskey",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Ice",
-   "Method": "",
-   "Glassware": "Rock Glass",
-   "Season": "",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/10145323/sazerac-720x720-recipe.jpg"
-},
- {
-   "Name": "Mata Hari",
-   "Ingredients": {
-      "Spirit": "Cognac",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2009/11/10153853/matahari.jpg"
-},
- {
-   "Name": "Hemingway Daiquiri",
-   "Ingredients": {
-      "Spirit": "Rum",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "Citrus",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2015/06/recipe-hanalei-sun.jpg"
-},
- {
-   "Name": "Tommy's Margarita",
-   "Ingredients": {
-      "Spirit": "Tequila",
-      "Sweetener": "",
-      "Juice": "Lime",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Rock Glass",
-   "Season": "",
-   "Tags": "Citrus",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/12/28140643/Pardy-Hardy-720x720-recipe.jpg"
-},
- {
-   "Name": "Bennett",
-   "Ingredients": {
-      "Spirit": "Gin",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Up",
-   "Method": "",
-   "Glassware": "Coupe",
-   "Season": "",
-   "Tags": "Citrus",
-   "Thumbnail": "https://s3.amazonaws.com/perfectcontent/images/c36401f0-1953-11e6-bced-45404e44cb61.jpg"
-},
- {
-   "Name": "Pi�a Colada",
-   "Ingredients": {
-      "Spirit": "Rum",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Ice",
-   "Method": "",
-   "Glassware": "Highball",
-   "Season": "Summer",
-   "Tags": "Fresh, tropical",
-   "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2014/09/01114602/Draaanks-Pina-Colada-cocktail.jpeg"
-},
- {
-   "Name": "Mojito",
-   "Ingredients": {
-      "Spirit": "Rum",
-      "Sweetener": "",
-      "Juice": "",
-      "Liqueur": "",
-      "Bitters": ""
-   },
-   "Garnish": "",
-   "Served": "Ice",
-   "Method": "",
-   "Glassware": "Highball",
-   "Season": "Summer",
-   "Tags": "Fresh, tropical",
-   "Thumbnail": "https://www.culinaryhill.com/wp-content/uploads/2018/08/Mojito-Cocktail-Culinary-Hill-square.jpg"
-}
-]
+   {
+     "Name": "Whiskey Sour",
+     "Ingredients": {
+        "Spirit": "60ml bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "1/2 tsp sugar",
+        "Juice": "30ml lemon",
+        "Protein": "1 egg white",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "Maraschino cherry and bitters, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Rock Glass",
+     "Season": "Summer",
+     "Tags": "Citrus",
+     "Alt": "Whiskey Sour",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/11/06162314/amaretto-sour-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Manhattan ",
+     "Ingredients": {
+        "Spirit": "60ml rye or bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "Maraschino cherry, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "Summer",
+     "Tags": "",
+     "Alt": "Manhattan",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/10144903/Manhattan-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Martini",
+     "Ingredients": {
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "5ml dry vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "1 dash orange bitters",
+        "Garnish": "olive skewer or lemon twist, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "Summer",
+     "Tags": "",
+     "Alt": "Martini",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/07/24135042/room-temperature-martini-1-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Old Fashioned",
+     "Ingredients": {
+        "Spirit": "60ml bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "1/2 tsp sugar",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "1 orange and twist, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "Summer",
+     "Tags": "",
+     "Alt": "Old Fashioned",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/08113350/bourbon-old-fashioned-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Margarita ",
+     "Ingredients": {
+        "Spirit": "60ml tequila",
+        "Spirit_2": "",
+        "Sweetener": "20ml orange liqueur",
+        "Juice": "30ml lime",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "salt rim"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Rock Glass",
+     "Season": "Summer",
+     "Tags": "Citrus",
+     "Alt": "Margarita",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2016/11/16132003/margarita-rocks-salt-720sq.jpg"
+  },
+   {
+     "Name": "Vesper",
+     "Ingredients": {
+        "Spirit": "60ml vodka",
+        "Spirit_2": "30ml gin",
+        "Sweetener": "22.5ml Lillet Blanc",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "1 dash Angostura",
+        "Garnish": "1 lemon twist, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "Summer",
+     "Tags": "",
+     "Alt": "Vesper",
+     "Thumbnail": "https://manila-wine.com/media/catalog/product/cache/1/image/700x700/9df78eab33525d08d6e5fb8d27136e95/v/e/vesper.jpg"
+  },
+   {
+     "Name": "Eggnog",
+     "Ingredients": {
+        "Spirit": "45ml bourbon whiskey",
+        "Spirit_2": "20ml spiced rum",
+        "Sweetener": "2 tsp sugar",
+        "Juice": "",
+        "Protein": "1 egg yolk, 85ml milk, 30ml cream",
+        "Liqueur": "1/4 tsp vanilla extract",
+        "Bitters": "",
+        "Garnish": "grated nutmeg and 1 cinnamon quill, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Rock Glass",
+     "Season": "Winter",
+     "Tags": "",
+     "Alt": "Eggnog",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/11/06162327/eggnog-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Boulevardier",
+     "Ingredients": {
+        "Spirit": "60ml rye or bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "30ml Campari",
+        "Bitters": "",
+        "Garnish": "Maraschino cherry and 1 orange twist, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "Winter",
+     "Tags": "",
+     "Alt": "Boulevardier",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2013/01/20104453/fa-Boulevardier.jpg"
+  },
+   {
+     "Name": "Negroni",
+     "Ingredients": {
+        "Spirit": "30ml gin",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "30ml Campari",
+        "Bitters": "",
+        "Garnish": "1 orange twist, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "Summer",
+     "Tags": "Spicy",
+     "Alt": "Negroni",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/08110806/negroni-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Rob Roy",
+     "Ingredients": {
+        "Spirit": "60ml scotch whisky",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "1 lemon twist, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Rob Roy",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/01/26151047/rob-roy-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Agave Old Fashioned",
+     "Ingredients": {
+        "Spirit": "60ml tequila",
+        "Spirit_2": "",
+        "Sweetener": "1/2 tsp Agave syrup",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "3 dashes Angostura",
+        "Garnish": "sliced jalepenos, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Shake",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Agave Old Fashioned",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2011/08/anjeo-old-fashioned1.jpg"
+  },
+   {
+     "Name": "Penicillin",
+     "Ingredients": {
+        "Spirit": "60ml scotch whisky",
+        "Spirit_2": "15ml Islay whisky float",
+        "Sweetener": "1 tsp of honey",
+        "Juice": "20ml lemon and 1 tsp ginger juice",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "1 piece of candied ginger, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Shake",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "Citrus",
+     "Alt": "Penicillin",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2016/03/25183103/penicillin-720x720.jpg"
+  },
+   {
+     "Name": "Trinidad Sour",
+     "Ingredients": {
+        "Spirit": "20ml rye whiskey 100 proof",
+        "Spirit_2": "",
+        "Sweetener": "30ml orgeat syrup",
+        "Juice": "20ml lemon",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "30ml Angostura",
+        "Garnish": ""
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "Citrus",
+     "Alt": "Trinidad Sour",
+     "Thumbnail": "https://cocktailkit.com.au/wp-content/uploads/2017/05/trinidad-sour-cocktail.jpg"
+  },
+   {
+     "Name": "Hanky Panky",
+     "Ingredients": {
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "30ml sweet vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "5ml Fernet Branca",
+        "Bitters": "",
+        "Garnish": "1 lemon twist, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "Herbal",
+     "Alt": "Hanky Panky",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/08/25102051/hanky-panky-720-720-article.jpg"
+  },
+   {
+     "Name": "White Lady",
+     "Ingredients": {
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "20ml orange liqueur",
+        "Juice": "30ml lemon",
+        "Protein": "1 egg white",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": ""
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "Citrus",
+     "Alt": "White Lady",
+     "Thumbnail": "https://tipsybartender.com/wp-content/uploads/2018/01/The-White-Lady.jpg"
+  },
+   {
+     "Name": "Daiquiri",
+     "Ingredients": {
+        "Spirit": "60ml rum",
+        "Spirit_2": "",
+        "Sweetener": "1 tsp sugar",
+        "Juice": "30ml lime ",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "lime wheel, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "Fresh, dry",
+     "Alt": "Daiquiri",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/09/01105724/ultimate-daiquiri-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Sidecar",
+     "Ingredients": {
+        "Spirit": "45ml Cognac or rye whiskey",
+        "Spirit_2": "",
+        "Sweetener": "45ml orange liqueur",
+        "Juice": "30ml lemon",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "sugar rim and orange twist, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Sidecar",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/06/23131338/NYC_Parlor-Steak-and-Fish_Emma-Slattery_ss-11691.jpg"
+  },
+   {
+     "Name": "Sazerac",
+     "Ingredients": {
+        "Spirit": "60ml Cognac or rye whiskey 100 proof",
+        "Spirit_2": "absinthe rinse ",
+        "Sweetener": "1/2 tsp sugar",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "1 dash Angostura, 3 dashes Peychaud's",
+        "Garnish": "1 lemon twist, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Sazerac",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/05/10145323/sazerac-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Mata Hari",
+     "Ingredients": {
+        "Spirit": "45ml Cognac or brandy",
+        "Spirit_2": "",
+        "Sweetener": "chai-infused sweet vermouth",
+        "Juice": "22.5ml lemon and 22.5ml pomegranate ",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "3 dried rose buds, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Mata Hari",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2009/11/10153853/matahari.jpg"
+  },
+   {
+     "Name": "Hemingway Daiquiri",
+     "Ingredients": {
+        "Spirit": "52.5ml rum",
+        "Spirit_2": "",
+        "Sweetener": "1/4 tsp sugar",
+        "Juice": "30ml lime and 22.5ml grapefruit ",
+        "Protein": "",
+        "Liqueur": "22.5ml Luxardo Maraschino liqueur ",
+        "Bitters": "",
+        "Garnish": "cherry and lime wheel, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "Citrus",
+     "Alt": "Hemingway Daiquiri",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2015/06/recipe-hanalei-sun.jpg"
+  },
+   {
+     "Name": "Tommy's Margarita",
+     "Ingredients": {
+        "Spirit": "60ml tequila",
+        "Spirit_2": "",
+        "Sweetener": "5ml Agave Syrup",
+        "Juice": "30ml lime and 5ml jalapeno brine",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "sliced jalepenos, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Shake",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "Citrus",
+     "Alt": "Tommy's Margarita",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/12/28140643/Pardy-Hardy-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Bennett",
+     "Ingredients": {
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "1 tsp sugar",
+        "Juice": "30ml lime ",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "2 dashes Angostura",
+        "Garnish": ""
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "Citrus",
+     "Alt": "Bennett",
+     "Thumbnail": "https://s3.amazonaws.com/perfectcontent/images/c36401f0-1953-11e6-bced-45404e44cb61.jpg"
+  },
+   {
+     "Name": "Piña Colada",
+     "Ingredients": {
+        "Spirit": "45ml rum",
+        "Spirit_2": "",
+        "Sweetener": "",
+        "Juice": "60ml pineapple",
+        "Protein": "60ml coconut milk",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "cherry and pineapple wedge on a skewer, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Shake",
+     "Glassware": "Highball",
+     "Season": "Summer",
+     "Tags": "Fresh, tropical",
+     "Alt": "Piña Colada",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2014/09/01114602/Draaanks-Pina-Colada-cocktail.jpeg"
+  },
+   {
+     "Name": "Mojito",
+     "Ingredients": {
+        "Spirit": "60ml rum",
+        "Spirit_2": "",
+        "Sweetener": "1 tsp sugar",
+        "Juice": "22.5ml lime and 3 mint leaves",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "top up with soda water and add a mint sprig, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Shake",
+     "Glassware": "Highball",
+     "Season": "Summer",
+     "Tags": "Fresh, tropical",
+     "Alt": "Mojito",
+     "Thumbnail": "https://www.culinaryhill.com/wp-content/uploads/2018/08/Mojito-Cocktail-Culinary-Hill-square.jpg"
+  },
+   {
+     "Name": "White Russian",
+     "Ingredients": {
+        "Spirit": "60ml vodka",
+        "Spirit_2": "",
+        "Sweetener": "30ml coffee liqueur",
+        "Juice": "",
+        "Protein": "1 tbsp thickened cream",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": ""
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "White Russian",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/12/20073201/white-russian-720x720-article.jpg"
+  },
+   {
+     "Name": "Black Russian",
+     "Ingredients": {
+        "Spirit": "60ml vodka",
+        "Spirit_2": "",
+        "Sweetener": "30ml coffee liqueur",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": ""
+     },
+     "Served": "Ice",
+     "Method": "Stir",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Black Russian",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2010/11/08141426/FA-black-russian-NEWEST.jpg"
+  },
+   {
+     "Name": "Old Pal",
+     "Ingredients": {
+        "Spirit": "30ml rye or bourbon whiskey",
+        "Spirit_2": "",
+        "Sweetener": "30ml dry vermouth",
+        "Juice": "",
+        "Protein": "",
+        "Liqueur": "30ml Campari",
+        "Bitters": "",
+        "Garnish": "1 lemon twist, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Stir",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Old Pal",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2018/07/18144421/old-pal-720x720-recipe.jpg"
+  },
+   {
+     "Name": "Southside",
+     "Ingredients": {
+        "Spirit": "60ml gin",
+        "Spirit_2": "",
+        "Sweetener": "1/2 tsp sugar",
+        "Juice": "30ml lime and 5 mint leaves",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "",
+        "Garnish": "1 mint sprig, for garnish"
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Southside",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2016/07/22142840/South-Side-720x720-Recipe.jpg"
+  },
+   {
+     "Name": "Army & Navy",
+     "Ingredients": {
+        "Spirit": "60ml navy strength gin",
+        "Spirit_2": "",
+        "Sweetener": "5ml orgeat syrup",
+        "Juice": "30ml lemon",
+        "Protein": "",
+        "Liqueur": "",
+        "Bitters": "2 dashes Angostura",
+        "Garnish": ""
+     },
+     "Served": "Up",
+     "Method": "Shake",
+     "Glassware": "Coupe",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Army & Navy",
+     "Thumbnail": "https://cdn.shopify.com/s/files/1/0583/3185/products/army_navy_small_1_of_1_2000x.jpg?v=1479406441"
+  },
+   {
+     "Name": "Mai Tai",
+     "Ingredients": {
+        "Spirit": "45ml rum",
+        "Spirit_2": "",
+        "Sweetener": "5ml orgeat syrup",
+        "Juice": "30ml lime",
+        "Protein": "",
+        "Liqueur": "22.5ml orange liqueur",
+        "Bitters": "",
+        "Garnish": "1 mint sprig and 1 lime wheel, for garnish"
+     },
+     "Served": "Ice",
+     "Method": "Shake",
+     "Glassware": "Rock Glass",
+     "Season": "",
+     "Tags": "",
+     "Alt": "Mai Tai",
+     "Thumbnail": "https://cdn.liquor.com/wp-content/uploads/2017/03/07152918/mai-tai-720x720-recipe.jpg"
+  }
