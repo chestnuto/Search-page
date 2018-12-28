@@ -33,6 +33,24 @@
     input::placeholder {
       color: #ababab;
     }
+    #searchBtn {
+      display: flex;
+      justify-content: center;
+    }
+    #displayAllBtn {
+      margin: 5px 0 9px;
+      color: #ffffff;
+      background-color: #babad0;
+      border: 0;
+      padding: 10px 19px;
+      outline: 0;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: 'Merriweather';
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
     #searchResults {
       display: flex;
       flex-wrap: wrap;
@@ -114,6 +132,9 @@
   <div id="searchBox">
     <input type="text" id="searchInput" onkeyup="searchDrinksObj()" size="24" placeholder="What do you feel like drinking?" autofocus >
   </div>
+  <div id="searchBtn">
+    <button id="displayAllBtn" onclick="showAllDrinks()">Show all</button>
+  </div>
   <div id="searchResults"></div>
 </div>
 
@@ -131,6 +152,12 @@ document.addEventListener('DOMContentLoaded',function(){
 
 });
 
+function showAllDrinks() {
+
+  document.getElementById('searchInput').value = 'all';
+  searchDrinksObj();
+}
+
 function searchDrinksObj() {
 
   var input, filter, drinkName, i, indexNo;
@@ -138,8 +165,6 @@ function searchDrinksObj() {
   filter = input.value.toUpperCase();
   result = document.getElementById('searchResults');
   document.getElementById('searchResults').innerHTML = '';
-  // document.getElementById('searchResults').classList.add('boxFadeOut');
-  // var pizza = getElementById('searchResults').children;
 
   drinksObj.sort(function(a, b){
     var x = a.Name.toLowerCase();
@@ -170,18 +195,16 @@ function searchDrinksObj() {
         document.getElementById('searchResults').innerHTML += '<div class="resultBox"><ul class="titleThumb"><li class="title">' + drinkName + '</li><li class="thumbnail"><img alt=\'' + drinkAlt + '\' src=\'' + drinkPic + '\' /></li></ul><ul class="ingredients">' +
         '<li class="spirit">' + drinkSpirit + '</li><li class="spirit_2">' + drinkSpirit_2 + '</li><li class="sweetener">' + drinkSweetener + '</li><li class="juice">' + drinkJuice + '</li><li class="liqueur">' + drinkLiqueur +
         '</li><li class="bitters">' + drinkBitters + '</li><li class="protein">' + drinkProtein + '</li><li class="garnish">' + drinkGarnish + '</li></ul></div>';
-
-          console.log('Matched: ' + drinkName.toUpperCase() + ' with ' + '\'' + filter + '\'' + ', index: ' + indexNo);
+        // console.log('Matched: ' + drinkName.toUpperCase() + ' with ' + '\'' + filter + '\'' + ', index: ' + indexNo);
       }
       else if (filter == "ALL") {
         document.getElementById('searchResults').innerHTML += '<div class="resultBox"><ul class="titleThumb"><li class="title">' + drinkName + '</li><li class="thumbnail"><img alt=\'' + drinkAlt + '\' src=\'' + drinkPic + '\' /></li></ul><ul class="ingredients">' +
         '<li class="spirit">' + drinkSpirit + '</li><li class="spirit_2">' + drinkSpirit_2 + '</li><li class="sweetener">' + drinkSweetener + '</li><li class="juice">' + drinkJuice + '</li><li class="liqueur">' + drinkLiqueur +
         '</li><li class="bitters">' + drinkBitters + '</li><li class="protein">' + drinkProtein + '</li><li class="garnish">' + drinkGarnish + '</li></ul></div>';
-
-          console.log('filter = all');
+        // console.log('filter = all');
       }
       else {
-          console.log('index: ' + indexNo + ', no match!');
+        // console.log('index: ' + indexNo + ', no match!');
       }
     }
   }
