@@ -322,7 +322,7 @@
    {
      "Name": "Sidecar",
      "Ingredients": {
-        "Spirit": "45ml Cognac or rye whiskey",
+        "Spirit": "45ml brandy or rye whiskey",
         "Spirit_2": "",
         "Sweetener": "45ml orange liqueur",
         "Juice": "30ml lemon",
@@ -342,7 +342,7 @@
    {
      "Name": "Sazerac",
      "Ingredients": {
-        "Spirit": "60ml Cognac or rye whiskey 100 proof",
+        "Spirit": "60ml brandy or rye whiskey 100 proof",
         "Spirit_2": "absinthe rinse ",
         "Sweetener": "1/2 tsp sugar",
         "Juice": "",
@@ -362,7 +362,7 @@
    {
      "Name": "Mata Hari",
      "Ingredients": {
-        "Spirit": "45ml Cognac or brandy",
+        "Spirit": "45ml brandy",
         "Spirit_2": "",
         "Sweetener": "30ml chai-infused sweet vermouth",
         "Juice": "22.5ml lemon and 22.5ml pomegranate ",
